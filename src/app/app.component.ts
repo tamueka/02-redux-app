@@ -13,10 +13,10 @@ export class AppComponent {
   }
 
   incrementar() {
-    this.contador--;
+    this.contador++;
   }
 
   decrementar() {
-    this.contador++;
+    this.contador--;
   }
 }
