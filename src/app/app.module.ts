@@ -26,3 +26,4 @@ import { NietoComponent } from './contador/nieto/nieto.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+ 

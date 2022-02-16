@@ -15,17 +15,17 @@ export class AppComponent {
   contador: number;
 
   constructor(private store: Store<AppState>) {
-    this.store.subscribe((state) => {
-      console.log(state);
-      this.contador = state.contador;
-    });
+    // seleccionamos un elemento especifico del store con .select()
+    this.store
+      .select('contador')
+      .subscribe((contador) => (this.contador = contador));
   }
 
-  incrementar() {
+  incrementar(): void {
     this.store.dispatch(actions.incrementar());
   }
 
-  decrementar() {
+  decrementar(): void {
     this.store.dispatch(actions.decrementar());
   }
 }
