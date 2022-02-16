@@ -28,4 +28,8 @@ export class AppComponent {
   decrementar(): void {
     this.store.dispatch(actions.decrementar());
   }
+
+  resetear(): void {
+    this.store.dispatch(actions.resetear());
+  }
 }
