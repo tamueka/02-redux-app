@@ -11,7 +11,7 @@ const _contadorReducer = createReducer(
   on(actions.decrementar, (state) => state - 1),
   on(actions.multiplicar, (state, { numero }) => state * numero),
   on(actions.dividir, (state, { numero }) => state / numero),
-  on(actions.resetear, (state) => 0)
+  on(actions.resetear, (state) => initialState)
 );
 
 // exportamos la funcion con el estado y la accion y devolvemos el reducer creado
